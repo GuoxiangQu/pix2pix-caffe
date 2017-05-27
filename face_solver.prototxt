@@ -1,0 +1,19 @@
+net: "face_gan.prototxt"
+
+base_lr: 1.0
+lr_policy: "multistep"
+gamma: 0.1
+
+stepvalue: 50000
+stepvalue: 100000
+stepvalue: 150000
+stepvalue: 230000
+stepvalue: 250000
+max_iter: 1000000
+
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 100000
+snapshot_prefix: "./model_cache/face_gan/face_gan"
+solver_mode: GPU
